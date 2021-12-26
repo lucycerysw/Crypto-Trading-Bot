@@ -1,0 +1,17 @@
+import time
+import hashlib
+import requests
+import hmac
+import config
+
+try:
+    from urllib import urlencode
+# python3
+except ImportError:
+    from urllib.parse import urlencode
+ 
+class BinanceAPI:
+    
+    BASE_URL = "https://www.binance.com/api/v1"
+    BASE_URL_V3 = "https://api.binance.com/api/v3"
+    PUBLIC_URL = "https://www.binance.com/exchange/public/product"
