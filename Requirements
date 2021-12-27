@@ -1,0 +1,10 @@
+Pip install if haven't already 
+
+Python 3
+    import os
+    import sys
+    import argparse
+    import time
+    import config
+    import threading
+    import sqlite3
